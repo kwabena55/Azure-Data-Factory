@@ -9,7 +9,10 @@
 		"type": "Json",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation"
+				"type": "AzureBlobFSLocation",
+				"fileName": "file.csv",
+				"folderPath": "directory",
+				"fileSystem": "myrestapi"
 			}
 		},
 		"schema": {}
