@@ -1,0 +1,23 @@
+{
+	"name": "file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "bb.csv",
+				"fileSystem": "myrestapi"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
